@@ -5,12 +5,12 @@ class Metadata(BaseModel):
     team_id: str
     run_id: str
     topic_id: str
-    task: str
+    task:  Optional[str] = None
     request_id: str
     narrative_id: str
 
 class ResponseItem(BaseModel):
-    citations: List[str]
+    citations: list | dict
     text: str
 
 class Document(BaseModel):
@@ -23,5 +23,5 @@ class Response(BaseModel):
     metadata: Metadata
     responses: List[ResponseItem]
     answer: List[ResponseItem]
-    references: List[str]
-    documents: Dict[str, Document]
+    references: List[str] = [] 
+    documents: Dict[str, Document] = {}

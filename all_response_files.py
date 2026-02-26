@@ -13,22 +13,29 @@ from autojudge_base import LeaderboardBuilder, LeaderboardSpec, MeasureSpec
 
 load_dotenv(dotenv_path=".env/autojudge.env")
 
+k = None
+
 MAX_ATTEMPTS = 3
 limiter = AsyncLimiter(max_rate=10, time_period=60)
 
 request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"
-response_path = pathlib.Path(__file__).resolve().parent / "ragtime-export/runs/repgen/aloe"
-# request_path = pathlib.Path(__file__).resolve().parent / "kiddie/runs/repgen/run1.jsonl"
-# response_path = pathlib.Path(__file__).resolve().parent / "kiddie/topics/kiddie-topics.jsonl"
-#List of response paths
-#aloe anise ant beet berry boar camel carp cat chili cod colt crab deer dill dog ell elk emu ewe fig fly frog gar gull guppy
-#hen lichen loon mango maple melon mink mite mole moss moth nut oats okra olive onion perch plum poppy radish rat rose rye skink
-#skunk squid swan tern tick toad trout ulva yak yam yew
+response_path_base = pathlib.Path(__file__).resolve().parent / "ragtime-export/runs/repgen"
+
+RESPONSE_RUNS = [
+    "aloe", "anise", "ant", "beet", "berry", "boar", "camel", "carp", "cat", "chili",
+    "cod", "colt", "crab", "deer", "dill", "dog", "eel", "elk", "emu", "ewe",
+    "fig", "fly", "frog", "gar", "gull", "guppy", "hen", "lichen", "loon", "mango",
+    "maple", "melon", "mink", "mite", "mole", "moss", "moth", "nut", "oats", "okra",
+    "olive", "onion", "perch", "plum", "poppy", "radish", "rat", "rose", "rye", "skink",
+    "skunk", "squid", "swan", "tern", "tick", "toad", "trout", "ulva", "yak", "yam", "yew",
+]
+
+response_paths = [response_path_base / run for run in RESPONSE_RUNS]
 
 FULL_DATA = LeaderboardSpec(measures=(MeasureSpec("RELEVANCE"),))
 
 
-async def async_generate(k: Optional[int] = None):
+async def async_generate(response_path: pathlib.Path, builder: LeaderboardBuilder, processed_topic_ids: list):
     client = AsyncOpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=os.environ["OPENROUTER_API_KEY"],
@@ -41,9 +48,6 @@ async def async_generate(k: Optional[int] = None):
         requests_to_process = requests[:k]
     else:
         requests_to_process = requests
-
-    builder = LeaderboardBuilder(FULL_DATA)
-    processed_topic_ids = []
 
     async def ask_once(prompt: str) -> str:
         for attempt in range(1, MAX_ATTEMPTS + 1):
@@ -88,18 +92,25 @@ async def async_generate(k: Optional[int] = None):
         )
 
         processed_topic_ids.append(request.request_id)
-        #print(f"Processed {request.request_id}")
+        print(f"Processed {request.request_id}")
 
+
+async def main():
+    #None means full file
+    builder = LeaderboardBuilder(FULL_DATA)
+    processed_topic_ids = []
+
+    for run in RESPONSE_RUNS:
+        path = response_path_base / run
+        print(f"Running evaluation for: {run}")
+        await async_generate(path, builder, processed_topic_ids)
 
     leaderboard = builder.build(
         expected_topic_ids=processed_topic_ids,
         on_missing="fix_aggregate"
     )
 
-    #print(leaderboard)
-    leaderboard.write(pathlib.Path("output.eval"), format="ir_measures")
-
+    leaderboard.write(pathlib.Path("FULL_ALL.output.eval.txt"), format="ir_measures")
 
 if __name__ == "__main__":
-    #None means full file
-    asyncio.run(async_generate(k=None))
+    asyncio.run(main())
