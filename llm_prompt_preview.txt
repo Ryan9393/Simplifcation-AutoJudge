@@ -26,186 +26,27 @@ Geoffrey Hinton, one of the pioneers of artificial intelligence, left Google in 
 
 
 Response:
-**Key Sentences Extracted for a Clear Report on Geoffrey Hinton, AI, and Safety Warnings:**
+This report addresses: Geoffrey Hinton's AI Concerns
+Developed by xAI, an offshoot of the programmers who stuck around after Elon Musk purchased X (formerly known as Twitter), Grok is designed to compete directly with OpenAI’s GPT-4 models, Google’s Bard, and a range of other public-facing chatbots.
+While you might expect it to open up to a wider audience when it’s out of beta, Musk has suggested that Grok will remain a feature exclusive to Premium+ X subscribers for the foreseeable future.
+Moto Razr 50 Ultra review: A multipurpose party trick with the right gimmicks
 
-1.
-The ‘Godfather of AI’ warns about potential dangers of the technology as he quits Google.
-2.
-Hinton has been worried about the potential of AI to do harm and he often talks about the existential threat that AI might pose to the human species.
-3.
-Dr Hinton told the BBC: "Right now, they’re not more intelligent than us, as far as I can tell.
-But I think they soon may be."
-4.
-He has used OpenAI’s ChatGPT and this has made him uneasy.
-5.
-When it started to succeed, no one thought it would succeed so quickly.
-6.
-One of the things that it's learning to do is simple reasoning.
-7.
-My worry is for those increases in productivity to put people out of work and make the rich richer and the poor poorer.
-And as you do that," Hinton said, "you make that gap bigger and society gets more and more violent."
-8.
-After hundreds of industry and science leaders warned that "mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war," the U.N. Secretary-General recently echoed their concern.
-9.
-Among them is human-level AI, defined as an AI that can perform a broad range of cognitive tasks at least as well as we can.
-We would be no match for it.
-10.
-Combined with hacked access to our social media timelines, it could create a fake reality on a massive scale.
-11.
-Yann LeCun has said there is an idea that if a system is intelligent it is going to want to dominate.
-Here, with AI, it’s not like that.
-In fact, it might not explicitly want that at all.
-12.
-We do not know how to design AI systems that reliably behave exactly as we intend them to.
-13.
-UK and US intervene amid AI industry’s rapid advances.
-14.
-The CMA chief executive said: “AI has burst into the public consciousness over the past few months but has been on our radar for some time."
-15.
-Denis Hassabis, who is the CEO of DeepMind, a startup that was acquired by Google in 2014, has made a bold claim that AI could reach human-level cognition in as little as five years.
-16.
-AI existential risk is still not taken as seriously as it should be.
-But that is changing.
-These sentences capture who Hinton is, why his warnings are causing a stir (his status as an AI pioneer, the rapid advancement of technology), the specific risks (job loss, misinformation, existential threats), how others in the field responded (LeCun and Hassabis), and the mounting calls for careful management and global regulation.
-Here are the key sentences extracted from the text, selected for their relevance to your information request regarding Geoffrey Hinton's resignation from Google, his contributions to AI, his warnings, other experts’ responses, and public implications:
+Summary
 
-1.
-Artificial intelligence called as dangerous as pandemics and nuclear war  
-2.
-This was recognized by the “spiritual father” of AI  
-3.
-The most significant are the autographs of the “godfather” of AI Jeffrey Hinton and OpenAI’s CEO Sam Altman.
-4.
-After leaving Google earlier this year, he gave several interviews in which he outlined his concerns about the technology.
-5.
-Earlier, they had already talked about the dangers of AI.
-6.
-In an open letter, they warned of potential risks to society.
-7.
-In the future, we can expect mass protests against the use of AI, because of which thousands of people are already losing their jobs, and in the future their number may be measured in millions.
-8.
-Of course, it has long been clear that artificial intelligence technologies will enter all areas of our lives and such a strong resource needs strict control.
-9.
-Hence the calls to create a system of its legal regulation of AI.
-10.
-OpenAI, in turn, was originally founded as a research company with a very global goal of developing AI for the benefit of humanity without causing harm.
-11.
-And it seems that there will be more and more such voices.
-12.
-The White House will study the risks of artificial intelligence  
+The Moto Razr 50 Ultra does enough to bring the fun back into a world of smartphones that is starved of innovation
 
-These sentences collectively address:
-- Hinton’s authority and influence in the field (“spiritual father”, “godfather” of AI),
-- his resignation and subsequent public warnings,
-- the analogy to major societal risks (like pandemics and nuclear war),
-- job loss concerns and widespread societal effects,
-- calls for regulation and stricter control,
-- the rising chorus of concern among experts,
-- governmental response (e.g., White House investigation),
-- and the founding principles of leading AI organizations like OpenAI.
-This set provides a clear overview of the gravity and context of Hinton’s warnings and expert/public responses, without requiring advanced technical background.
-Here are the key sentences from your provided text, selected for their relevance to your request for a clear, accessible summary on Geoffrey Hinton, his contributions to AI, his warnings after leaving Google, the reaction of other experts, and what the public should take away:
+There are few names in the consumer technology-verse that are as iconic as the Moto Razr.
+Retro Razr
 
-1.
-**“Hinton, 75, announced his resignation from Google in a statement to the New York Times, saying he now regrets his work.”**
-2.
-**“Hinton ’ s groundbreaking research on deep learning and neural networks has paved the way for artificial intelligence systems such as ChatGT.”**
-3.
-**“He worked part-time at Google for a decade in the tech giant ’ s AI development efforts, but has since had concerns about the technology and its role in its development.”**
-4.
-**“In an interview with the BBC, Hinton said: ‘At the moment, these shows are not smarter than us, but I think they may soon be.’”**
-5.
-**“Hinton said that ‘before AI becomes smarter than us, I think the people who develop it should be encouraged to do a lot of work to understand how it can try to take control of us.’”**
-6.
-**“He stressed that it is important to ‘try, for example, to distinguish everything that is fake as fake,’ and said, ‘I don’t know if we can do it technically or not.’”**
-7.
-**"‘Now there are 99 highly intelligent people trying to make AI better, and one very intelligent person trying to figure out how to stop it from taking control, and maybe we should be more balanced.’”**
-8.
-**"So we have to worry about that.
-"**
-9.
-**“Perhaps the scariest aspect of today’s generative AI revolution is the lack of knowledge among the scientists and programmers who built the big language models.”**
-10.
-**“But on the other hand, some experts assert that artificial intelligence is the most important tool that may serve humanity, and that we do not yet understand its importance.”**
-11.
-**“The father of artificial intelligence warns: he will control us and governments to confront him.”**
-12.
-**“Governments are concerned about the security risks posed by the AI industry, as it has become more advanced, it may use the industry to launch cyber attacks or other types of attacks that may be difficult to detect and defend.”**
-13.
-**“Elham Aboul Fath” (author cited for context)**
-14.
-**“Warnings about the dangers of artificial intelligence.”**
-15.
-**“He pointed out that this could develop to the extent that it could lead to the loss of the ability to innovate and creative thinking and the inability of humanity to respond to special and unexpected circumstances.”**
-16.
-**“No one has the means to detect all possible misuse of AI across the different world, yet the same technologies that can be used to implement ‘bad AI’, can also be used by ‘good AI’ to fight ‘bad AI’.“**
-17.
-**“Henton is not the first Google employee to raise a red flag on artificial intelligence.”**
+Straight up, one of the coolest bits of the rebirth of the Razr—this time with touchscreens and the Android app marketplace—is Retro Razr.
+The acclaimed chipmaker’s share price dropped more than 5%, causing investors to wonder if this is the end of Nvidia’s jaw-breaking rally.
+SPECIAL REPORT The Top 7 Stocks for 2024
 
-These sentences together highlight Hinton’s identity and contribution, his reasons and concerns for resigning, the potential risks of AI for society and jobs, differing expert opinions, public takeaways, and the importance of responsible development and regulation.
-Here are the key sentences from the text, selected for their relevance to your request for a report on Geoffrey Hinton, his AI contributions, the context of his resignation, his warnings, and the broader response:
+Nvidia’s Dip Buying Guide: 3 Reasons to Scoop Up NVDA Stock on Any Weakness
 
-1.
-**Geoffrey Hinton, a pioneer in artificial intelligence (AI), said in an interview with Reuters today that the threat posed by AI to humans may be “more urgent” than climate change.
-**
+Advertisement
 
-2.
-**Dr. Hinton’s pioneering research in neural networks and deep learning paves the way for current AI systems such as Google’s Bard chatbot and Microsoft’s ChatGPT.
-**
-
-3.
-**He worked for Google for 10 years.
-**
-
-4.
-**The US media reported today that Hinton, known as the “godfather of AI”, resigned his job at Google and openly talked about the risks of AI, worried that AI would fall into the wrong hands.
-**
-
-5.
-**Hinton explained that he left Google to talk freely about the potential risks of AI without harming Google.
-**
-
-6.
-**I want to 'blow the whistle' in a way that says we should seriously worry about how to stop these things from taking control of us.
-"**
-
-7.
-**He also noted that the pace of advances in AI technology has far exceeded his and others' expectations.
-**
-
-8.
-**Hinton pointed out that competition among tech giants is driving these companies to release new AI technologies at a dangerous rate, which will endanger people’s jobs and spread misinformation.
-**
-
-9.
-**The Internet will be filled with more and more fake AI-generated text, photos, and even videos, but the average person will not be able to tell the truth, Hinton said.
-**
-
-10.
-**While AI has been used to support human needs for work, the rapid development of chatbots like ChatGPT could put human jobs at risk.
-**
-
-11.
-**Tech billionaire Elon Musk and many experts have called for a pause in the development of AI systems to allow time to ensure the technology is safe.
-**
-
-12.
-**Hinton isn’t the only tech leader to express concerns about AI, and in March, a group of community members published a letter calling on AI labs to suspend training for at least six months on the most powerful AI systems, citing 'profound risks to society and humanity.
-'**
-
-13.
-**Although AI may pose an existential threat to humans, he does not agree to suspend AI research, because it can never erase the benefits and application value of AI.
-**
-
-14.
-**The White House ordered AI to be evaluated, and the European Union proposed legislation to regulate AI.
-**
-
-15.
-**As one of the first companies to publish AI principles, we remain committed to taking a responsible approach to AI," the statement added (referring to Google’s response).
-**
-
-These sentences together give you an overview of Hinton’s legacy, motivations for leaving Google, specific risks he highlights (job loss, misinformation, technology outpacing safety), and the international and industry response to his warnings.
+  • Semiconductor solutions for artificial intelligence applications will continue to be in high demand globally, and Nvidia (NVDA) will remain a market leader.
 
 Return ONLY one number: 3, 2, 1, or 0.
 Do not explain your answer.

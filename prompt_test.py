@@ -3,7 +3,7 @@ from data.json_loader import load_requests, load_responses, get_response_for_req
 from prompt.prompt_builder import create_full_prompt  # updated import
 
 request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"
-response_path = pathlib.Path(__file__).resolve().parent / "ragtime-export/runs/repgen/aloe"
+response_path = pathlib.Path(__file__).resolve().parent / "ragtime-export/runs/repgen/camel"
 OUTPUT_FILE = pathlib.Path("llm_prompt_preview.txt")
 
 
