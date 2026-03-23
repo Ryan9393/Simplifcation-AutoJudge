@@ -1,9 +1,9 @@
 import pathlib
 from data.json_loader import load_requests, load_responses, get_response_for_request
-from prompt.prompt_builder import create_full_prompt  # updated import
+from prompt.prompt_builder import create_full_prompt
 
-request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"
-response_path = pathlib.Path(__file__).resolve().parent / "ragtime-export/runs/repgen/camel"
+request_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime25_main_all.jsonl"
+response_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime-export/runs/repgen/aloe"
 OUTPUT_FILE = pathlib.Path("llm_prompt_preview.txt")
 
 

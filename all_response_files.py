@@ -16,6 +16,7 @@ load_dotenv(dotenv_path=".env/autojudge.env")
 k = None
 
 MAX_ATTEMPTS = 3
+#Change limiter
 limiter = AsyncLimiter(max_rate=10, time_period=60)
 
 request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"

@@ -53,6 +53,7 @@ async def async_generate():
                         messages=[{"role": "user", "content": prompt}],
                         temperature=0,
                     )
+                    print(resp)
                     return resp.choices[0].message.content.strip()
 
                 except OpenAIError as e:

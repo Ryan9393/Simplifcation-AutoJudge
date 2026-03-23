@@ -1,0 +1,28 @@
+
+You are generating a checklist to evaluate how well a response satisfies a report request.
+
+Request:
+Title: Geoffrey Hinton's AI Concerns
+
+Background:
+I’m a college student who has seen articles about Geoffrey Hinton and his resignation from Google, with warnings of AI's impacts, but I don’t fully understand the context of these warnings. Since I’m interested in the future of AI and how it might affect jobs or safety, I’d like a report that breaks down the story and why Hinton’s warnings matter. I want something that helps me follow this issue more clearly without needing a tech background.
+
+Problem:
+Geoffrey Hinton, one of the pioneers of artificial intelligence, left Google in 2023, warning that AI might become dangerous if not carefully managed. This report should explain who he is, what his main contributions to AI have been, and why his recent warnings made headlines. The report should also explore how other experts responded to his concerns, and what the public should understand from this event.
+
+
+Instructions:
+- Create EXACTLY 5 checklist items.
+- Each item must represent ONE distinct requirement.
+- Items must be specific, objective, and clearly checkable.
+- Avoid overlap between items.
+- Cover the most important aspects of the request.
+- If needed, merge or prioritize less important details to stay within 5 items.
+- Ensure a balanced checklist (not all items about the same aspect).
+
+Output format:
+- Return a numbered list (1., 2., 3., ...).
+- Each item must be a single sentence.
+- Do NOT include explanations or extra text.
+
+Return ONLY the checklist.
