@@ -6,20 +6,21 @@ from typing import Optional
 from openai import AsyncOpenAI, OpenAIError
 from dotenv import load_dotenv
 from aiolimiter import AsyncLimiter
-from data.json_loader import load_requests, load_responses, get_response_for_request
-from prompt.prompt_builder import create_full_prompt
+from data.json_loader import load_checklists, load_responses, get_response_for_request
+from prompt.prompt_builder import create_checklist_prompt
 from autojudge_base import LeaderboardBuilder, LeaderboardSpec, MeasureSpec
 
 
 load_dotenv(dotenv_path=".env/autojudge.env")
 
-k = None
+#None means full file
+k = 1
 
 MAX_ATTEMPTS = 3
 #Change limiter
 limiter = AsyncLimiter(max_rate=100, time_period=60)
 
-request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"
+request_path = pathlib.Path(__file__).resolve().parent / "checklists.jsonl"
 response_path_base = pathlib.Path(__file__).resolve().parent / "ragtime-export/runs/repgen"
 
 RESPONSE_RUNS = [
@@ -42,7 +43,7 @@ async def async_generate(response_path: pathlib.Path, builder: LeaderboardBuilde
         api_key=os.environ["OPENROUTER_API_KEY"],
     )
 
-    requests = load_requests(request_path)
+    requests = load_checklists(request_path)
     responses = load_responses(response_path)
 
     if k is not None:
@@ -76,7 +77,7 @@ async def async_generate(response_path: pathlib.Path, builder: LeaderboardBuilde
             print(f"No matching response found for {request.request_id}. Skipping.")
             continue
 
-        prompt = create_full_prompt(request, response)
+        prompt = create_checklist_prompt(request, response)
 
         try:
             score = await ask_once(prompt)
@@ -97,7 +98,6 @@ async def async_generate(response_path: pathlib.Path, builder: LeaderboardBuilde
 
 
 async def main():
-    #None means full file
     builder = LeaderboardBuilder(FULL_DATA)
     processed_topic_ids = []
 
@@ -111,7 +111,7 @@ async def main():
         on_missing="fix_aggregate"
     )
 
-    leaderboard.write(pathlib.Path("FULL_ALL.output.eval.txt"), format="ir_measures")
+    leaderboard.write(pathlib.Path("Checklist.output.eval.txt"), format="ir_measures")
 
 if __name__ == "__main__":
     asyncio.run(main())

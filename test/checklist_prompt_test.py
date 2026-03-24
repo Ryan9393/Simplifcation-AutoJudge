@@ -15,7 +15,7 @@ def main():
         print("No requests found.")
         return
 
-    request = requests[1]
+    request = requests[5]
     response = get_response_for_request(request.request_id, responses)
 
     if response is None:
