@@ -45,7 +45,7 @@ def create_checklist_prompt(checklist_request, response) -> str:
 You are evaluating how well a response satisfies a checklist.
 
 Checklist:
-{checklist_request}
+{checklist_request.checklist}
 
 Response:
 {response_text}
