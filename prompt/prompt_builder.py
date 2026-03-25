@@ -94,3 +94,50 @@ Output format:
 
 Return ONLY the checklist.
 """
+
+
+
+def create_nugget_prompt(request, response) -> str:
+    request_text = f"""Title: {request.title}
+
+Background:
+{request.background}
+
+Problem:
+{request.problem_statement}
+"""
+
+    nuggets = [
+        f"[NUGGET {i+1}]:\n {item.text.strip()}"
+        for i, item in enumerate(response.responses)
+        if item.text.strip()
+    ]
+
+    nuggets_text = "\n".join(nuggets)
+
+    return f"""
+You are evaluating how relevant individual response nuggets are to a report request.
+
+Each nugget should be graded independently using this rubric:
+
+1 Relevant:
+The nugget meaningfully contributes to addressing the request.
+
+0 Not Relevant:
+The nugget does not help address the request or is off-topic.
+
+Instructions:
+- Assign a score (0 or 1) to EACH nugget.
+- Then compute the average score across all nuggets.
+- Return ONLY the final average as a decimal between 0 and 1.
+- Do NOT include explanations.
+- Do NOT list individual scores.
+
+Request:
+{request_text}
+
+Response Nuggets:
+{nuggets_text}
+
+Return ONLY the average score (e.g., 0.0, 0.5, 1.0).
+"""
