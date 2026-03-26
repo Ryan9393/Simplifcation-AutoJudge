@@ -13,7 +13,8 @@ from autojudge_base import LeaderboardBuilder, LeaderboardSpec, MeasureSpec
 
 load_dotenv(dotenv_path=".env/autojudge.env")
 
-k = 1
+#None is full file
+k = None
 
 MAX_ATTEMPTS = 3
 #Change limiter
