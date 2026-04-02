@@ -5,7 +5,6 @@ import json
 from openai import AsyncOpenAI, OpenAIError
 from dotenv import load_dotenv
 from aiolimiter import AsyncLimiter
-
 from data.json_loader import load_requests
 from prompt.prompt_builder import create_checklist_builder_prompt
 
@@ -14,8 +13,8 @@ load_dotenv(dotenv_path=".env/autojudge.env")
 MAX_ATTEMPTS = 3
 limiter = AsyncLimiter(max_rate=100, time_period=60)
 
-request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"
-OUTPUT_FILE = pathlib.Path("checklists.json")
+request_path = pathlib.Path(__file__).resolve().parent.parent / "rag4reports/data/report-requests.jsonl"
+OUTPUT_FILE = pathlib.Path("rag4reports_checklists.jsonl")
 
 
 async def async_generate_checklists():
@@ -64,7 +63,8 @@ async def async_generate_checklists():
         })
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2)
+        for item in results:
+            f.write(json.dumps(item) + "\n")
 
     print(f"Saved {len(results)} checklists to {OUTPUT_FILE.resolve()}")
 

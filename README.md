@@ -1,6 +1,7 @@
 #AutoJudge
 
 pip install autojudge-base
-pip install minima-llm
 
 py -3.13 -m test.nugget_prompt_preview
+py -3.13 -m rag4reports_methods.build_request_checklists
+etc
