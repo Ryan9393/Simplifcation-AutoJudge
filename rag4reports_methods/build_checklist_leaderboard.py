@@ -106,7 +106,7 @@ async def main():
         on_missing="fix_aggregate"
     )
 
-    leaderboard.write(pathlib.Path("Checklist.rag4reports.output.eval.txt"), format="ir_measures")
+    leaderboard.write(pathlib.Path("Checklist.rag4reports.output.eval.txt"), format="rag4reports")
 
 if __name__ == "__main__":
     asyncio.run(main())
