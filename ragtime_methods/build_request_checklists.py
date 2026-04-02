@@ -14,7 +14,7 @@ load_dotenv(dotenv_path=".env/autojudge.env")
 MAX_ATTEMPTS = 3
 limiter = AsyncLimiter(max_rate=100, time_period=60)
 
-request_path = pathlib.Path(__file__).resolve().parent / "ragtime25_main_all.jsonl"
+request_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime25_main_all.jsonl"
 OUTPUT_FILE = pathlib.Path("checklists.json")
 
 

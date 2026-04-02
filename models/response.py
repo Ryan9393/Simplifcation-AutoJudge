@@ -1,17 +1,17 @@
 from pydantic import BaseModel
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Union
 
 class Metadata(BaseModel):
-    team_id: str
-    run_id: str
-    topic_id: str
-    task:  Optional[str] = None
-    request_id: str
-    narrative_id: str
+    team_id: Optional[str] = None
+    run_id: Optional[str] = None
+    topic_id: Optional[str] = None
+    task: Optional[str] = None
+    request_id: Optional[str] = None
+    narrative_id: Optional[str] = None
 
 class ResponseItem(BaseModel):
-    citations: list | dict
     text: str
+    citations: Union[Dict[str, float], list] = {}
 
 class Document(BaseModel):
     id: str
@@ -19,9 +19,10 @@ class Document(BaseModel):
     url: Optional[str] = None
 
 class Response(BaseModel):
-    is_ragtime: bool
-    metadata: Metadata
+    topic_id: Optional[str] = None
     responses: List[ResponseItem]
-    answer: List[ResponseItem]
-    references: List[str] = [] 
-    documents: Dict[str, Document] = {}
+    metadata: Optional[Metadata] = None
+    answer: Optional[List[ResponseItem]] = None
+    references: Optional[List[str]] = None
+    documents: Optional[Dict[str, Document]] = None
+    is_ragtime: Optional[bool] = None
