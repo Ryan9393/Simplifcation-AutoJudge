@@ -3,7 +3,7 @@ from data.json_loader import load_requests, load_responses, get_response_for_req
 from prompt.prompt_builder import create_nugget_prompt
 
 request_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime25_main_all.jsonl"
-response_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime-export/runs/repgen/berry"
+response_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime-export/runs/repgen/camel"
 OUTPUT_FILE = pathlib.Path("nugget_prompt_preview.txt")
 
 
