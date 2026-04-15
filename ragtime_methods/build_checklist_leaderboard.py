@@ -57,7 +57,7 @@ async def async_generate(response_path: pathlib.Path, builder: LeaderboardBuilde
                     resp = await client.chat.completions.create(
                         model="openai/gpt-4o-mini",
                         messages=[{"role": "user", "content": prompt}],
-                        temperature=0,
+                        temperature=0.5,
                     )
                     return resp.choices[0].message.content.strip()
 
