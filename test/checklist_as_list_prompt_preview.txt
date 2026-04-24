@@ -1,7 +1,7 @@
 
-You are evaluating whether a response satisfies a single checklist requirement.
+You are evaluating whether a response satisfies a single requirement.
 
-Checklist item:
+requirement:
 The report includes a brief biography of Geoffrey Hinton, highlighting his key contributions to the field of artificial intelligence.
 
 Response:
@@ -27,7 +27,7 @@ But that is changing.
 These sentences best summarize the main points about Hinton’s concerns, the speed and unpredictability of AI’s development, the recognition by governments and other experts, and the potential existential risks that are prompting urgent discussions in the public sphere.
 
 Instructions:
-- Return 1 if the response clearly and explicitly satisfies the checklist item.
+- Return 1 if the response clearly and explicitly satisfies the requirement.
 - Return 0 if it does not.
 - Be strict: partial, vague, or implied matches do NOT count.
 - Do not infer intent—only count what is directly supported by the text.
@@ -39,9 +39,9 @@ Do not explain your answer.
 ================================================================================
 
 
-You are evaluating whether a response satisfies a single checklist requirement.
+You are evaluating whether a response satisfies a single requirement.
 
-Checklist item:
+requirement:
 The report explains the context and significance of Hinton's resignation from Google in 2023.
 
 Response:
@@ -67,7 +67,7 @@ But that is changing.
 These sentences best summarize the main points about Hinton’s concerns, the speed and unpredictability of AI’s development, the recognition by governments and other experts, and the potential existential risks that are prompting urgent discussions in the public sphere.
 
 Instructions:
-- Return 1 if the response clearly and explicitly satisfies the checklist item.
+- Return 1 if the response clearly and explicitly satisfies the requirement.
 - Return 0 if it does not.
 - Be strict: partial, vague, or implied matches do NOT count.
 - Do not infer intent—only count what is directly supported by the text.
@@ -79,9 +79,9 @@ Do not explain your answer.
 ================================================================================
 
 
-You are evaluating whether a response satisfies a single checklist requirement.
+You are evaluating whether a response satisfies a single requirement.
 
-Checklist item:
+requirement:
 The report details Hinton's specific warnings about the potential dangers of AI and why they are considered important.
 
 Response:
@@ -107,7 +107,7 @@ But that is changing.
 These sentences best summarize the main points about Hinton’s concerns, the speed and unpredictability of AI’s development, the recognition by governments and other experts, and the potential existential risks that are prompting urgent discussions in the public sphere.
 
 Instructions:
-- Return 1 if the response clearly and explicitly satisfies the checklist item.
+- Return 1 if the response clearly and explicitly satisfies the requirement.
 - Return 0 if it does not.
 - Be strict: partial, vague, or implied matches do NOT count.
 - Do not infer intent—only count what is directly supported by the text.
@@ -119,9 +119,9 @@ Do not explain your answer.
 ================================================================================
 
 
-You are evaluating whether a response satisfies a single checklist requirement.
+You are evaluating whether a response satisfies a single requirement.
 
-Checklist item:
+requirement:
 The report summarizes responses from other experts in the field regarding Hinton's concerns.
 
 Response:
@@ -147,7 +147,7 @@ But that is changing.
 These sentences best summarize the main points about Hinton’s concerns, the speed and unpredictability of AI’s development, the recognition by governments and other experts, and the potential existential risks that are prompting urgent discussions in the public sphere.
 
 Instructions:
-- Return 1 if the response clearly and explicitly satisfies the checklist item.
+- Return 1 if the response clearly and explicitly satisfies the requirement.
 - Return 0 if it does not.
 - Be strict: partial, vague, or implied matches do NOT count.
 - Do not infer intent—only count what is directly supported by the text.
@@ -159,9 +159,9 @@ Do not explain your answer.
 ================================================================================
 
 
-You are evaluating whether a response satisfies a single checklist requirement.
+You are evaluating whether a response satisfies a single requirement.
 
-Checklist item:
+requirement:
 The report provides insights on what the public should understand about the implications of Hinton's warnings for the future of AI and its impact on jobs and safety.
 
 Response:
@@ -187,7 +187,7 @@ But that is changing.
 These sentences best summarize the main points about Hinton’s concerns, the speed and unpredictability of AI’s development, the recognition by governments and other experts, and the potential existential risks that are prompting urgent discussions in the public sphere.
 
 Instructions:
-- Return 1 if the response clearly and explicitly satisfies the checklist item.
+- Return 1 if the response clearly and explicitly satisfies the requirement.
 - Return 0 if it does not.
 - Be strict: partial, vague, or implied matches do NOT count.
 - Do not infer intent—only count what is directly supported by the text.

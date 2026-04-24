@@ -147,16 +147,16 @@ def create_single_checklist_item_prompt(checklist_item: str, response) -> str:
     response_text = "\n".join(r.text for r in response.responses)
 
     return f"""
-You are evaluating whether a response satisfies a single checklist requirement.
+You are evaluating whether a response satisfies a single requirement.
 
-Checklist item:
+requirement:
 {checklist_item}
 
 Response:
 {response_text}
 
 Instructions:
-- Return 1 if the response clearly and explicitly satisfies the checklist item.
+- Return 1 if the response clearly and explicitly satisfies the requirement.
 - Return 0 if it does not.
 - Be strict: partial, vague, or implied matches do NOT count.
 - Do not infer intent—only count what is directly supported by the text.
