@@ -164,3 +164,39 @@ Instructions:
 Return ONLY a single number: 0 or 1.
 Do not explain your answer.
 """
+
+
+def create_single_nugget_prompt(request, nugget_text: str) -> str:
+    request_text = f"""Title: {request.title}
+
+Background:
+{request.background}
+
+Problem:
+{request.problem_statement}
+"""
+
+    return f"""
+You are evaluating how relevant a response nugget is to a report request.
+
+Scoring rubric:
+
+1 Relevant:
+The nugget meaningfully contributes to addressing the request.
+
+0 Not Relevant:
+The nugget does not help address the request or is off-topic.
+
+Instructions:
+- Assign a score of 0 or 1.
+- Return ONLY the score.
+- Do NOT include explanations.
+
+Request:
+{request_text}
+
+Nugget:
+{nugget_text.strip()}
+
+Return ONLY 0 or 1.
+"""
