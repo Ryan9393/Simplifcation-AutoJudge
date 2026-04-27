@@ -15,7 +15,7 @@ def main():
         print("No requests found.")
         return
 
-    request = requests[5]
+    request = requests[0]
     response = get_response_for_request_rag4reports(request.topic_id, responses)
 
     if response is None:
