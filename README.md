@@ -1,6 +1,6 @@
 # Simplification-AutoJudge
 
-Simplification-based AutoJudge for the TREC AutoJudge / RAG4Reports tasks. Uses LLMs to automatically score RAG system outputs, returning a binary vector indicating which nuggets are covered by an answer — e.g. `[0, 0, 1, 0, 1]`.
+Simplification-based AutoJudge for the TREC AutoJudge / RAG4Reports tasks. Uses LLMs to automatically score RAG system outputs, ranking which systems generate the most human liked response.
 
 ## Setup
 
