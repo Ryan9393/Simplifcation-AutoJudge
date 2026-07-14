@@ -1,14 +1,15 @@
 import pathlib
-from data.json_loader import load_requests, load_responses, get_response_for_request
+from data.json_loader import load_requests, load_responses
 from prompt.prompt_builder import create_full_prompt
+from sources import SOURCES, get_response_for
 
-request_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime25_main_all.jsonl"
-response_path = pathlib.Path(__file__).resolve().parent.parent / "ragtime-export/runs/repgen/aloe"
+source = SOURCES["ragtime"]
+response_path = source.response_base_path / "aloe"
 OUTPUT_FILE = pathlib.Path("llm_prompt_preview.txt")
 
 
 def main():
-    requests = load_requests(request_path)
+    requests = load_requests(source.raw_request_path)
     responses = load_responses(response_path)
 
     if not requests:
@@ -16,7 +17,7 @@ def main():
         return
 
     request = requests[1]
-    response = get_response_for_request(request.request_id, responses)
+    response = get_response_for(request.request_id, responses, source)
 
     if response is None:
         print("No matching response found.")

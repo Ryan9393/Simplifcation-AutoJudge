@@ -25,18 +25,6 @@ def load_responses(file_path: pathlib.Path) -> List[Response]:
                 print(f"Error parsing response: {e}")
     return responses
 
-def get_response_for_request(request_id: int, responses: List[Response]):
-    for resp in responses:
-        if str(resp.metadata.request_id) == str(request_id):
-            return resp
-    return None
-
-def get_response_for_request_rag4reports(topic_id: int, responses: List[Response]):
-    for resp in responses:
-        if str(resp.metadata.topic_id) == str(topic_id):
-            return resp
-    return None
-
 def load_checklists(path: pathlib.Path) -> List[Request_Checklist]:
     checklists = []
     with open(path, 'r', encoding='utf-8') as f:

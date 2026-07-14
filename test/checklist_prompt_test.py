@@ -1,14 +1,15 @@
 import pathlib
-from data.json_loader import load_checklists, load_responses, get_response_for_request_rag4reports
+from data.json_loader import load_checklists, load_responses
 from prompt.prompt_builder import create_checklist_prompt
+from sources import SOURCES, get_response_for
 
-request_path = pathlib.Path(__file__).resolve().parent.parent / "rag4reports_methods/rag4reports_checklists.jsonl"
-response_path = pathlib.Path(__file__).resolve().parent.parent / "rag4reports/data/generated-reports/adventure-continue"
+source = SOURCES["rag4reports"]
+response_path = source.response_base_path / "adventure-continue"
 OUTPUT_FILE = pathlib.Path("checklist_prompt_preview.txt")
 
 
 def main():
-    requests = load_checklists(request_path)
+    requests = load_checklists(source.checklist_path)
     responses = load_responses(response_path)
 
     if not requests:
@@ -16,7 +17,7 @@ def main():
         return
 
     request = requests[0]
-    response = get_response_for_request_rag4reports(request.topic_id, responses)
+    response = get_response_for(request.topic_id, responses, source)
 
     if response is None:
         print("No matching response found.")
